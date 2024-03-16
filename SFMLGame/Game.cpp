@@ -294,7 +294,7 @@ void Game::spawnBullet(std::shared_ptr<Entity> entity, const Vec2& mousePos)
 	bullet->cTransform = std::make_shared<CTransform>(entity->cTransform->position, difVec, 0);
 	bullet->cShape = std::make_shared<CShape>(10, 8, sf::Color(255, 255, 255), sf::Color(255, 0, 0), 3);
 	bullet->cCollision = std::make_shared<CCollision>(11);
-	bullet->cLifeSpan = std::make_shared<CLifeSpan>(60);
+	bullet->cLifeSpan = std::make_shared<CLifeSpan>(50);
 }
 
 void Game::spawnSpecialWeapon(std::shared_ptr<Entity> entity)
